@@ -30,8 +30,6 @@ public class ProductsTests extends BaseTest {
 
     @Test()
     public void verifyAddProductToCart() {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\comp\\Downloads\\chromedriver_win32\\chromedriver.exe");
-        //ChromeDriver driver = new ChromeDriver();
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.openPage();
@@ -80,7 +78,6 @@ public class ProductsTests extends BaseTest {
         productsPage.selectSortBy("Price (high to low)");
         productsPage.selectSortBy("Name (A to Z)");
         productsPage.selectSortBy("Name (Z to A)");
-        //productsPage.selectCheapestItem();
         System.out.println("test");
     }
 
@@ -121,7 +118,6 @@ public class ProductsTests extends BaseTest {
         loginPage.login(new User("standard_user", "secret_sauce"));
 
         ProductsPage productsPage = new ProductsPage(driver);
-        //productsPage.selectSortBy("Price (low to high)");
         productsPage.selectSortBy("Price (high to low)");
 
         List<Product> productListActual = productsPage.getListProducts();
