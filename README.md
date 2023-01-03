@@ -1,1 +1,1 @@
-Test automation of practice testing e-commerce site: https://www.saucedemo.com/
+Test automation of e-commerce site, for testing practice: https://www.saucedemo.com .
